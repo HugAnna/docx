@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "wb",
   "scripts": {
-    "dev": "vuepress dev . --host \"localhost\"",
+    "dev": "vuepress dev . --temp .temp",
     "build": "vuepress build .",
     "deploy": "bash deploy.sh"
   },

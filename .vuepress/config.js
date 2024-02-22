@@ -41,17 +41,17 @@ module.exports = {
         "icon": "reco-date"
       },
       { "text": '留言板', "link": '/blogs/views/messageBoard.html', "icon": 'reco-suggestion' },
-      {
-        "text": "Contact",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "GitHub",
-            "link": "https://github.com/wangxiaoer5200",
-            "icon": "reco-github"
-          }
-        ]
-      },
+      // {
+      //   "text": "Contact",
+      //   "icon": "reco-message",
+      //   "items": [
+      //     {
+      //       "text": "GitHub",
+      //       "link": "https://github.com/wangxiaoer5200",
+      //       "icon": "reco-github"
+      //     }
+      //   ]
+      // },
     ],
     sidebar,
     "type": "blog",
