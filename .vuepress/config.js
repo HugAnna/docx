@@ -20,15 +20,24 @@ module.exports = {
       }
     ]
   ],
-  "plugins": ["@vuepress-reco/vuepress-plugin-comments", "vuepress-plugin-meting"],
+  "plugins": [
+    // ["@vssue/vuepress-plugin-vssue", {
+    // platform: 'github-v4',
+    // owner: 'HugAnna', // 仓库的拥有者的名称
+    // locale: 'zh', // 语言设置
+    // repo: 'docx', // 存储 Issue 和评论的仓库的名称
+    // clientId: '03fb5ab756e7442817c0', // 刚保存下来的  Client ID
+    // clientSecret: 'aeab5bbe27a915080ae5f507f3bed5c2d0e3f332', //  刚才保存下来的 Client secrets
+
+    // }],
+    ["vuepress-plugin-meting"]],
   "theme": "reco",
   "themeConfig": {
     "mode": 'light',
     "subSidebar": 'auto',
-    "valineConfig": {
-      "appId": 'aCSipIDPBNQTreNNNr4bT5R4-gzGzoHsz',
-      "appKey": 'zuQELzuRINaCxHgIozNrnwKO',
-    },
+    // "vssueConfig": {
+   
+    // },
     "nav": [
       {
         "text": "主页",
@@ -77,7 +86,7 @@ module.exports = {
     "search": true, 
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
-    "author": "wangxiaoer",
+    "author": "tangxiaoer",
     "authorAvatar": "/head.png",
     "record": "首页",
     "startYear": "2020"

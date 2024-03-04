@@ -13,7 +13,7 @@ module.exports = {
   [JAVASCRIPT_PATH]: [createSideBarConfig('js基础', JAVASCRIPT_PATH)],
   [CSS_PATH]: [createSideBarConfig('CSS基础', CSS_PATH)],
   [PERFORM_PATH]: [createSideBarConfig('前端性能相关', PERFORM_PATH)],
-  [ALGORITHM_PATH]: [createSideBarConfig('vue源码', ALGORITHM_PATH)],
+  [ALGORITHM_PATH]: [createSideBarConfig('vue核心源码', ALGORITHM_PATH)],
   [GIT_PATH]: [createSideBarConfig('git', GIT_PATH)],
   [HTML_PATH]: [createSideBarConfig('HTML', HTML_PATH)],
   [JQ_PATH]: [createSideBarConfig('jq', JQ_PATH)],
