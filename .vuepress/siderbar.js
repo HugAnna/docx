@@ -8,7 +8,7 @@ const HTML_PATH = '/blogs/html'
 const JQ_PATH = '/blogs/jq'
 const OTHER_PATH = '/blogs/other'
 const INTERVIEW_PATH = '/blogs/interview'
-const WEBPACK__PATH = '/blogs/webpack'
+const WEBPACK__PATH = '/blogs/webpack-base'
 const WEBPACKHIGH__PATH = '/blogs/webpack-high'
 module.exports = {
   [JAVASCRIPT_PATH]: [createSideBarConfig('js基础', JAVASCRIPT_PATH)],

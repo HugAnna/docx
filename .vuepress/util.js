@@ -1,26 +1,25 @@
 const fs = require('fs');
 const path = require('path');
 const getFile = (prefixPath) => {
- 
   let arr = fs.readdirSync(path.join(process.cwd(), prefixPath))
+  let resArr = arr
   // 排序并去掉后缀
   for (let g = 0; g < arr.length-1; g++) {
     for (let h = 0; h < arr.length - 1; h++) {
       // 替换
-      arr[h]= arr[h].replace('.md', '')
-      arr[h+1] =  arr[h + 1].replace('.md', '')
-      if (!isNaN(Number(arr[h])) ) {
-        if (Number(arr[h]) > Number(arr[h+1])) {
-          [arr[h],arr[h+1]] = [arr[h+1],arr[h]];
+      resArr[h]= resArr[h].replace('.md', '')
+      resArr[h+1] =  resArr[h + 1].replace('.md', '')
+      if (!isNaN(Number(resArr[h])) ) {
+        if (Number(resArr[h]) > Number(resArr[h+1])) {
+          [resArr[h],resArr[h+1]] = [resArr[h+1],resArr[h]];
         }
       }
        
     }
 }
-  arr = arr.map(item => `${prefixPath}/${item}`)
+  resArr = resArr.map(item => `${prefixPath}/${item}`)
+  return resArr
 
- 
-  return arr
 }
 
 const createSideBarConfig = (title, prefixPath, collapsable = true) => {
