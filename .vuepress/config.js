@@ -1,4 +1,5 @@
 const sidebar = require('./siderbar.js');
+console.log("🚀 ~ sidebar:", sidebar)
 module.exports = {
   "title": "唐小二博客",
   "description": "唐小二的博客",
@@ -45,22 +46,18 @@ module.exports = {
         "icon": "reco-home"
       },
       {
-        "text": "时间线",
-        "link": "/timeline/",
+        "text": "项目",
+        "link": "/blogs/project/",
         "icon": "reco-date"
       },
-      { "text": '留言板', "link": '/blogs/views/messageBoard.html', "icon": 'reco-suggestion' },
       // {
-      //   "text": "Contact",
-      //   "icon": "reco-message",
-      //   "items": [
-      //     {
-      //       "text": "GitHub",
-      //       "link": "https://github.com/wangxiaoer5200",
-      //       "icon": "reco-github"
-      //     }
-      //   ]
+      //   "text": "时间线",
+      //   "link": "/timeline/",
+      //   "icon": "reco-date"
       // },
+      // { "text": '留言板', "link": '/blogs/views/messageBoard.html', "icon": 'reco-suggestion' },
+
+
     ],
     sidebar,
     "type": "blog",
@@ -69,10 +66,10 @@ module.exports = {
         "location": 2,
         "text": "目录索引"
       },
-      "tag": {
-        "location": 3,
-        "text": "标签索引"
-      }
+      // "tag": {
+      //   "location": 3,
+      //   "text": "标签索引"
+      // }
     },
     "friendLink": [
       {

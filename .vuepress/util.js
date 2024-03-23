@@ -19,6 +19,7 @@ const getFile = (prefixPath) => {
 }
   resArr = resArr.map(item => `${prefixPath}/${item}`)
   return resArr
+ 
 
 }
 
