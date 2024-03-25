@@ -1,5 +1,6 @@
 
 const { createSideBarConfig } = require('./util')
+
 const JAVASCRIPT_PATH = '/blogs/javascript'
 const CSS_PATH = '/blogs/css'
 const PERFORM_PATH = '/blogs/perform'
@@ -10,10 +11,10 @@ const HTML_PATH = '/blogs/html'
 const JQ_PATH = '/blogs/jq'
 const OTHER_PATH = '/blogs/other'
 const INTERVIEW_PATH = '/blogs/interview'
-const WEBPACK__PATH = '/blogs/webpack-base'
-const WEBPACKHIGH__PATH = '/blogs/webpack-high'
 const PROJECT_PATH = '/blogs/project'
-const WEBPACKTEOHY__PATH = '/blogs/webpack-theory'
+const WEBPACK__PATH = '/blogs/webpack'
+// const WEBPACKHIGH__PATH = '/blogs/webpack-high'
+// const WEBPACKTEOHY__PATH = '/blogs/webpack-theory'
 module.exports = {
   [JAVASCRIPT_PATH]: [createSideBarConfig('js基础', JAVASCRIPT_PATH)],
   [CSS_PATH]: [createSideBarConfig('CSS基础', CSS_PATH)],
@@ -25,10 +26,8 @@ module.exports = {
   [JQ_PATH]: [createSideBarConfig('jq', JQ_PATH)],
   [OTHER_PATH]: [createSideBarConfig('工具', OTHER_PATH)],
   [INTERVIEW_PATH]: [createSideBarConfig('面试题', INTERVIEW_PATH)],
-  [WEBPACK__PATH]: [createSideBarConfig('webpack基础', WEBPACK__PATH)],
-  [WEBPACKHIGH__PATH]: [createSideBarConfig('webpack高级', WEBPACKHIGH__PATH)],
-  [WEBPACKTEOHY__PATH]: [createSideBarConfig('webpack原理', WEBPACKTEOHY__PATH)],
-  [PROJECT_PATH]: [{
-    title: '项目', collapsable: true, children: [{ title: '大屏适配', path: '/blogs/project/1.md' }]
-  }]
+  [WEBPACK__PATH]: [createSideBarConfig('webpack', WEBPACK__PATH)],
+  // [WEBPACKHIGH__PATH]: [createSideBarConfig('webpack', WEBPACKHIGH__PATH)],
+  // [WEBPACKTEOHY__PATH]: [createSideBarConfig('webpack', WEBPACKTEOHY__PATH)],
+  [PROJECT_PATH]: [createSideBarConfig('大屏适配', PROJECT_PATH)]
 }

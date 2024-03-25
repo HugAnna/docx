@@ -1,5 +1,5 @@
 const sidebar = require('./siderbar.js');
-console.log("🚀 ~ sidebar:", sidebar)
+
 module.exports = {
   "title": "唐小二博客",
   "description": "唐小二的博客",
@@ -45,17 +45,13 @@ module.exports = {
         "link": "/",
         "icon": "reco-home"
       },
+  
       {
-        "text": "项目",
-        "link": "/blogs/project/",
+        "text": "时间线",
+        "link": "/timeline/",
         "icon": "reco-date"
       },
-      // {
-      //   "text": "时间线",
-      //   "link": "/timeline/",
-      //   "icon": "reco-date"
-      // },
-      // { "text": '留言板', "link": '/blogs/views/messageBoard.html', "icon": 'reco-suggestion' },
+      { "text": '留言板', "link": '/blogs/views/messageBoard.html', "icon": 'reco-suggestion' },
 
 
     ],

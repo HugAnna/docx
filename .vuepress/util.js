@@ -18,9 +18,8 @@ const getFile = (prefixPath) => {
     }
 }
   resArr = resArr.map(item => `${prefixPath}/${item}`)
-  return resArr
- 
 
+  return resArr
 }
 
 const createSideBarConfig = (title, prefixPath, collapsable = true) => {
